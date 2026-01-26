@@ -1,0 +1,10 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="trigger">
+      <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">About</a>
+      <a class="nav-link{% if page.url contains 'publications' %} active{% endif %}" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="nav-link{% if page.url contains 'projects' %} active{% endif %}" href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a class="nav-link{% if page.url contains 'cv' %} active{% endif %}" href="{{ '/cv/' | relative_url }}">CV</a>
+    </div>
+  </nav>
+</header>

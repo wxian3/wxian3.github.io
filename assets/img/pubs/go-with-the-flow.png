@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180">
+  <defs>
+    <linearGradient id="gwtf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#gwtf)"/>
+  <path d="M60 90 Q120 60 180 90 Q240 120 280 90" stroke="#fff" stroke-width="3" fill="none" opacity="0.8"/>
+  <path d="M40 90 Q100 50 160 90 Q220 130 280 90" stroke="#fff" stroke-width="2" fill="none" opacity="0.5"/>
+  <text x="160" y="130" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#fff">Go-with-the-Flow</text>
+  <text x="160" y="148" text-anchor="middle" font-family="Arial" font-size="10" fill="#fff" opacity="0.8">CVPR 2025 Oral</text>
+</svg>

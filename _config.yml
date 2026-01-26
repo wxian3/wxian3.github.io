@@ -1,0 +1,54 @@
+# Site settings
+title: Wenqi Xian
+email: wx97@cornell.edu
+description: >-
+  Ph.D. Candidate in Computer Science at Cornell Tech.
+  Research in Computer Vision, Graphics, and Human-Computer Interaction.
+baseurl: ""
+url: "https://wenqixian.github.io"
+
+# Personal info
+first_name: Wenqi
+last_name: Xian
+position: Ph.D. Candidate
+affiliation: Cornell Tech
+address: New York, NY
+
+# Social links
+google_scholar: https://scholar.google.com/citations?user=SCHOLAR_ID
+github_username: wenqixian
+linkedin_username: wenqixian
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  news:
+    output: false
+  publications:
+    output: true
+    permalink: /publications/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
