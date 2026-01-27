@@ -338,7 +338,7 @@ img {
 
 .publication-item {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: var(--spacing-sm);
   padding: var(--spacing-sm);
   background: #fff;
