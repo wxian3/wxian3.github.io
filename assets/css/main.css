@@ -256,7 +256,7 @@ img {
 }
 
 .about-content h1 {
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
 }
 
 .about-content .subtitle {
