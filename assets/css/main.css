@@ -373,7 +373,8 @@ video.publication-thumbnail {
   background: var(--color-bg-alt);
 }
 
-video.publication-thumbnail.taller {
+video.publication-thumbnail.taller,
+img.publication-thumbnail.taller {
   aspect-ratio: 4/3;
 }
 

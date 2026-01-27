@@ -43,6 +43,15 @@
       const defaultSrc = profileImg.getAttribute('data-default');
       const hobbyWords = document.querySelectorAll('.hobby-word');
       
+      // Preload all hobby images on page load
+      hobbyWords.forEach(function(word) {
+        const imgSrc = word.getAttribute('data-img');
+        if (imgSrc) {
+          const preloadImg = new Image();
+          preloadImg.src = imgSrc;
+        }
+      });
+      
       hobbyWords.forEach(function(word) {
         word.addEventListener('mouseenter', function() {
           const newImg = this.getAttribute('data-img');
