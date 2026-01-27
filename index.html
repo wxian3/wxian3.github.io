@@ -5,7 +5,7 @@ title: About
 
 <section class="about-section">
   <div class="profile-photo">
-    <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Wenqi Xian" class="profile-image">
+    <img id="profile-img" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Wenqi Xian" class="profile-image" data-default="{{ '/assets/img/profile.jpg' | relative_url }}">
   </div>
   
   <div class="about-content">
@@ -25,7 +25,7 @@ title: About
     </p>
 
     <p>
-      Outside of research, I enjoy being outdoors — skiing, diving, and climbing.
+      Outside of research, I enjoy being outdoors — <span class="hobby-word" data-img="{{ '/assets/img/skiing.jpg' | relative_url }}">skiing</span>, <span class="hobby-word" data-img="{{ '/assets/img/diving.jpg' | relative_url }}">diving</span>, and <span class="hobby-word" data-img="{{ '/assets/img/climbing.jpg' | relative_url }}">climbing</span>.
     </p>
     
     <div class="social-links">
@@ -71,7 +71,7 @@ title: About
   </table>
 </section>
 
-<section class="publications-section">
+<section id="publications" class="publications-section">
   <h2>Publications</h2>
   
   <div class="publication-list">
@@ -207,7 +207,7 @@ title: About
     </div>
     
     <div class="publication-item">
-      <video src="{{ '/assets/img/pubs/factormatte.mp4' | relative_url }}" class="publication-thumbnail" autoplay loop muted playsinline></video>
+      <img src="{{ '/assets/img/pubs/factormatte.gif' | relative_url }}" alt="FactorMatte" class="publication-thumbnail">
       <div class="publication-content">
         <h3><a href="https://factormatte.github.io/" target="_blank">FactorMatte: Redefining Video Matting for Re-Composition Tasks</a></h3>
         <p class="publication-authors">

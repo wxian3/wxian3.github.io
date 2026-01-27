@@ -33,5 +33,37 @@
   </main>
   
   {% include footer.html %}
+  
+  <script>
+    // Profile image hover effect for hobbies
+    document.addEventListener('DOMContentLoaded', function() {
+      const profileImg = document.getElementById('profile-img');
+      if (!profileImg) return;
+      
+      const defaultSrc = profileImg.getAttribute('data-default');
+      const hobbyWords = document.querySelectorAll('.hobby-word');
+      
+      hobbyWords.forEach(function(word) {
+        word.addEventListener('mouseenter', function() {
+          const newImg = this.getAttribute('data-img');
+          if (newImg) {
+            profileImg.style.opacity = '0';
+            setTimeout(function() {
+              profileImg.src = newImg;
+              profileImg.style.opacity = '1';
+            }, 150);
+          }
+        });
+        
+        word.addEventListener('mouseleave', function() {
+          profileImg.style.opacity = '0';
+          setTimeout(function() {
+            profileImg.src = defaultSrc;
+            profileImg.style.opacity = '1';
+          }, 150);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
