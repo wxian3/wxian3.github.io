@@ -2,10 +2,11 @@
 title: Wenqi Xian
 email: wx97@cornell.edu
 description: >-
-  Ph.D. Candidate in Computer Science at Cornell Tech.
-  Research in Computer Vision, Graphics, and Human-Computer Interaction.
+  Wenqi Xian is a Research Scientist at Luma AI working on generative video and AI for filmmaking.
+  Previously at Netflix Eyeline Studios. Ph.D. from Cornell Tech. Research in computer vision, 
+  video generation, neural rendering, and 3D reconstruction.
 baseurl: ""
-url: "https://wenqixian.github.io"
+url: "https://wxian3.github.io"
 
 # Personal info
 first_name: Wenqi
@@ -28,6 +29,7 @@ permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Collections
 collections:
